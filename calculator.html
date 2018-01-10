@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculator</title>
+		
+
+		<!-- STYLESHEETS-->
+		<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+		<!-- CUSTOM STYLES -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+		
+		
+
+
+		<!-- WEBFONT -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+		<!-- ICON -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default bg-trans" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<!-- <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> -->
+						<span class="">MENU</span>
+					</button>
+					<a class="navbar-brand" href="http://despatch.com.ng/"><img src="assets/img/despatch.jpg" class="width-150"></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://despatch.com.ng/individual-form/">INDIVIDUAL FORM</a></li>
+						<li><a href="http://despatch.com.ng/business-form/">BUSINESS FORM</a></li>
+						<li><a href="http://despatch.com.ng/delivery-service-form/">DELIVERY SERVICE FORM</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+		<!--shipping calculator-->
+		<div class="container m-t-3p mm-t-0">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 bs p-30 mp-15">
+					<div class="row">
+						<div class=" text-center">
+			                	<h4> SHIPPING RATE CALCULATOR</h4>
+			                </div>
+			                <p>&nbsp;</p>
+	                	<div class="col-md-6 col-sm-6">
+	                		<form action="" method="POST" role="form">
+	                			<div class="form-group">
+	                				<span><img src="assets/img/placeholder.svg" class="width-20"></span> 
+							        <label for="from">From where do you want to ship a package?</label>
+							        <select id="from-state" class="form-control state-dropdown" required>
+	                                     <option selected disabled>Select State</option>
+	                                     <option  value="">Lagos</option>
+	                                </select>
+	                                <div class="clearfix"></div>
+							        <p>&nbsp;</p>
+							        <select id="from-lga" name="from_lga" class="form-control" required="">
+	                                    <option selected disabled>Select LGA</option>
+	                                    <option value="">Agege/Ijaiye</option> 
+									  	<option value="">Alimosho</option> 
+									  	<option value="">Ajeromi-Ifelodun</option> 
+									  	<option value="">Kosofe</option> 	
+									  	<option value="">Mushin</option>
+							          	<option value="">Oshodi-Isolo</option>
+							          	<option value="">Ojo</option>
+							          	<option value="">Ikorodu</option>
+									  	<option value="">Surulere</option> 
+									  
+									  	<option value="">Ifako-Ijaye</option> 
+									  	<option value="">Shomolu</option>
+									  	<option value="">Amuwo-Odofin</option>
+							          	<option value="">Lagos Mainland</option>
+							          	<option value="">Ikeja</option> 
+									  	<option value="">Eti-Osa</option>
+									  	<option value="">Badagry</option>
+							          	<option value="">Apapa</option>
+									  	<option value="">Lagos Island</option> 
+									  	<option value="">Epe</option>
+									  	<option value="">Ibeju-Lekki</option>
+									</select>
+	                			</div>
+
+	                			<div class="form-group">
+	                				<span><img src="assets/img/placeholder.svg" class="width-20"></span>
+	                				<label for="to">To</label>
+	                				<select id="to-state" name="state" class="form-control" required>
+	                                    <option selected disabled>Select State</option>
+	                                    <option  value="">Lagos</option>
+	                                </select>
+
+	                                <div class="clearfix"></div>
+							        <p>&nbsp;</p>
+
+							        <select id="to-lga" name="lga" class="form-control" required>
+	                                    <option selected disabled>Select LGA</option>
+	                                    <option value="">Agege/Ijaiye</option> 
+									  	<option value="">Alimosho</option> 
+									 	<option value="">Ajeromi-Ifelodun</option> 
+									  	<option value="">Kosofe</option> 	
+									  	<option value="">Mushin</option>
+							          	<option value="">Oshodi-Isolo</option>
+							          	<option value="">Ojo</option>
+							          	<option value="">Ikorodu</option>
+									  	<option value="">Surulere</option> 
+									  
+									  	<option value="">Ifako-Ijaye</option> 
+									  	<option value="">Shomolu</option>
+									  	<option value="">Amuwo-Odofin</option>
+							          	<option value="">Lagos Mainland</option>
+							          	<option value="">Ikeja</option> 
+									  	<option value="">Eti-Osa</option>
+									  	<option value="">Badagry</option>
+							          	<option value="">Apapa</option>
+									  	<option value="">Lagos Island</option> 
+									  	<option value="">Epe</option>
+									  	<option value="">Ibeju-Lekki</option>
+									</select>
+	                			</div>
+	                			
+	                			<div class="form-group">
+	                                <span><img src="assets/img/weighing.svg" class="width-20"></span>
+	                                <label for="weight">Weight (KG)</label>
+	                                <input type="number" id="weight" name="weight" value="0.00" class="form-control" required>
+	                            </div>
+
+	                            <div class="form-group">
+	                                <button type="button" id="button" class="btn width-440 twidth-330 mwidth-100p bg-trans shover bd-brand-despatch w-700">Calculate Shipping Rate</button>
+	                            </div>
+	                		</form>
+	                	</div>
+	                	<div class="col-md-6 col-sm-6 m-t-10p">
+	                		<div class="center-block text-center">
+	                            <p>ESTIMATED SHIPPING FEE</p>
+	                            <h1 class="shipping-price inline">
+	                                <span class="symbol">&#8358;</span>
+	                                <span class="f-80" id="price-estimate">0.00</span>
+	                                <span class="f-80" id="showdetails" style="display:none;"></span>
+	                            </h1>
+	                        </div>
+
+	                        <div class="alert clear center-block" role="alert" style="background:#ffd900; opacity:.9; color:#000000;" >
+	                            <strong>Please Note: </strong> The above is an estimate, actual charges may vary.
+	                        </div>
+	                	</div>
+	                </div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+
+	    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+	    </script>
+	</body>
+	<script>
+		$(document).ready(function(){             
+		    $("#button").click(function(){            
+
+
+		        var fromstate = $('#from-state').val();
+				var fromlga = $('#from-lga').val();
+				var tostate = $('#to-state').val();
+				var tolga = $('#to-lga').val();
+				var weight = $('#weight').val();
+			
+			$(".be-loader").fadeIn("slow");
+							
+		        $.ajax({
+		            type: "POST",
+		            url: "getweight.php",
+		            data: {fromstate:fromstate, fromlga:fromlga, tostate:tostate, tolga:tolga, weight:weight, },
+		            success: function(response){
+	                $("#showdetails").html(response);
+	                $("#showdetails").show();
+					
+					$("#price-estimate").hide();
+
+					$(".be-loader").fadeOut("slow");
+		        }
+		 
+
+		        });      
+				  
+		    });
+
+		});
+	</script>
+</html>
